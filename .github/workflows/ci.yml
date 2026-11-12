@@ -1,0 +1,33 @@
+name: build-and-test
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+jobs:
+  frontend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Install dependencies
+        working-directory: frontend
+        run: npm install
+      - name: Build frontend
+        working-directory: frontend
+        run: npm run build
+  backend:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-dotnet@v4
+        with:
+          dotnet-version: 8.0.x
+      - name: Restore
+        run: dotnet restore UrbanSignals.sln
+      - name: Build
+        run: dotnet build UrbanSignals.sln --configuration Release --no-restore
+      - name: Test
+        run: dotnet test UrbanSignals.sln --configuration Release --no-build --collect:"XPlat Code Coverage"

@@ -1,0 +1,34 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanSignals.Api", "backend\UrbanSignals.Api\UrbanSignals.Api.csproj", "{57A2BB3F-4BE1-4F25-9F12-C9C271D40101}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanSignals.Domain", "backend\UrbanSignals.Domain\UrbanSignals.Domain.csproj", "{57A2BB3F-4BE1-4F25-9F12-C9C271D40102}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanSignals.Infrastructure", "backend\UrbanSignals.Infrastructure\UrbanSignals.Infrastructure.csproj", "{57A2BB3F-4BE1-4F25-9F12-C9C271D40103}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrbanSignals.Tests", "backend\UrbanSignals.Tests\UrbanSignals.Tests.csproj", "{57A2BB3F-4BE1-4F25-9F12-C9C271D40104}"
+EndProject
+Global
+ GlobalSection(SolutionConfigurationPlatforms) = preSolution
+  Debug|Any CPU = Debug|Any CPU
+  Release|Any CPU = Release|Any CPU
+ EndGlobalSection
+ GlobalSection(ProjectConfigurationPlatforms) = postSolution
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40101}.Release|Any CPU.Build.0 = Release|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40102}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40102}.Debug|Any CPU.Build.0 = Debug|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40102}.Release|Any CPU.ActiveCfg = Release|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40103}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40103}.Debug|Any CPU.Build.0 = Debug|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40103}.Release|Any CPU.ActiveCfg = Release|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40104}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40104}.Debug|Any CPU.Build.0 = Debug|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40104}.Release|Any CPU.ActiveCfg = Release|Any CPU
+  {57A2BB3F-4BE1-4F25-9F12-C9C271D40104}.Release|Any CPU.Build.0 = Release|Any CPU
+ EndGlobalSection
+EndGlobal
